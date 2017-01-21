@@ -10,17 +10,21 @@
 	function draw() {
 		var c= document.getElementById("myCanvas");
 		var ctx=c.getContext("2d");
-		//Triangle!!
+		
 		ctx.beginPath();
 		ctx.strokeStyle="red";
 		ctx.moveTo(75,0);
 		ctx.lineTo(0,100);
 		ctx.lineTo(150,100);
 		ctx.closePath();
+		ctx.fillStyle = 'red'
+		ctx.fill();
+		
+		ctx.fillRect(400,400,100,150);
 
-		ctx.fillRect(400,400,100,150)
 
 	}
+	</script>
 </head>
 <body>
 
